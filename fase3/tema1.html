@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DISEÑO DE SITIOS WEB - 1143</title>
+	<link rel="stylesheet" href="css/ResetEstilo.css">
+	<link rel="stylesheet" href="css/Estilo.css">	
+	<link rel="stylesheet" href="css/font.css">
+</head>
+<body>
+  	<div class="social">
+		<ul>
+			<li><a href="https://www.facebook.com/" class="icon-facebook" target="_blank"></a></li>
+			<li><a href="https://www.instagram.com/" class="icon-instagram" target="_blank"></a></li>
+			<li><a href="https://twitter.com/" class="icon-twitter" target="_blank"></a></li>
+			<li><a href="https://www.youtube.com/" class="icon-youtube" target="_blank"></a></li>			    
+		</ul>			    
+  	</div>	
+	<div class=contenedor>
+		<header>
+			<div class="foto">
+			 <img src="img/logo.png" alt="UNAD">
+			 	<div class="container">
+ 					<strong>Universidad Nacional</strong>
+					<br>
+					<strong>Abierta y a Distancia</strong>
+ 				</div>			 	
+			</div>
+			<div class="titulo">
+				<h1>Flex Box, Listas y enlaces en HTML5 y CSS5</h1>
+			</div>			
+		</header>
+		<nav>
+			<ul class="menu">
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="#">Temas</a>
+					<ul>
+						<li><a href="tema1.html">Tema 1</a></li>
+						<li><a href="tema2.html">Tema 2</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Recursos Digitales</a>
+					<ul>
+						<li><a href="recurso1.html">Recurso 1</a></li>
+						<li><a href="recurso2.html">Recurso 2</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Aprendizaje</a>
+					<ul>
+						<li><a href="actividad1.html">Actividad 1</a></li>
+						<li><a href="actividad2.html">Actividad 2</a></li>
+					</ul>
+				</li>
+				<li><a href="autor.html">Acerca de</a></li>
+			</ul>
+		</nav>
+		<main>
+			<section>	
+				<h1>FLEX BOX CSS3</h1>				
+				<article>					
+					<p>
+						El Módulo de Caja Flexible, comúnmente llamado flexbox, fue diseñado como un modelo unidimensional de layout, y como un método que pueda ayudar a distribuir el espacio entre los ítems de una interfaz y mejorar las capacidades de alineación. <br>Vamos aprender a utilizarlo, pera esto se debe tener claro dos conceptos importantes, el elemento contenedor o padre y el elemento item o hijo. También debe conocer los ejes, eje principal y eje transversal.
+					</p>
+          			<br>
+          			<h2><strong>Eje Principal</strong></h2>
+					<p>
+						El eje principal está definido por flex-direction, Si elegimos row o row-reverse, el eje principal correrá a lo largo de la fila según la dirección de la línea, este posee cuatro posibles valores que son:
+					</p>
+					<ul>
+						<li type= disc>row</li>
+						<li type= disc>row-reverse</li>
+						<li type= disc>column</li>
+						<li type= disc>column-reverse</li>
+					</ul>
+				  	<br>
+          			<br>
+          			<h2><strong>Eje cruzado</strong></h2>					
+					<p>
+						El eje cruzado va perpendicular al eje principal, y por lo tanto si flex-direction (del eje principal) es row o row-reverse el eje cruzado irá por las columnas
+					</p>
+					<img src="img/flexbox01.jpg" alt="flexbox">
+				</article>
+        <article>
+          <p>Estas son algunas propiedades muy útiles cuando utilizamos los Flexbox, y que son aplicables al elemento padre para alinear a los elemento hijos o items: <strong>FLEX-DIRECTION</strong>, <strong>FLEX-DIRECTION</strong>, <strong>FLEX-FLOW</strong>, <strong>JUSTIFY CONTENT</strong>, <strong>ALIGN-ITEMS</strong>. Veremos que funcion cumple cada una.</p>
+          <br>          
+          <h2>PROPRIEDADES QUE CONTROLAN LA DIRECCIÓN</h2>
+          <br>
+          <P><strong>FLEX-DIRECTION</strong></P>
+          <p><strong>flex-direction: row</strong>; alinea horizontalmente los elementos de izquierda a la dereha.</p>          
+          <p><strong>flex-direction: row-reverse</strong>; alinea horizontalmente los elementos de la derecha a la izquierda</p>
+          <p><strong>flex-direction: column</strong>; alinea verticalmente los elementos de arriba hacia abajo</p>          
+          <p><strong>flex-direction: column-reverse</strong>; alinea verticalmente los elementos de abajo hacia arriba</p>
+          <br>
+          <img src="img/flexbox02.png" alt="flexbox">
+          <br>
+          <p><strong>FLEX-WRAP</strong></p>   
+          <p><strong>flex-wrap: wrap</strong> La propiedad de envoltura flexible especifica si las posiciones flexibles deben deslizar o no.</p>          
+          <p><strong>flex-wrap: wrap-reverse</strong>; deslizan en orden inverso</p>
+          <br>
+          <p><strong>FLEX-FLOW:</strong></p>          
+          <p><strong>flex-flow: row wrap;</strong> La propiedad flex-flow es una propiedad abreviada para establecer flex-direction y flex-wrap.</p>          
+          <br> 
+          <img src="img/flexbox03.png" alt="flexbox">
+          <br>         
+          <h2>PROPRIEDADES QUE CONTROLAN LA ALINEACIÓN</h2>
+          <br>
+          <p><strong>JUSTIFY CONTENT</strong></p>          
+          <p>La propriedad justify-content es usada para alinear los elementos flexibles en el eje principal.</p>          
+          <p><strong>justify-content: center</strong>; centra los elementos en el contenedor</p>          
+          <p><strong>justify-content: flex-start</strong>; Alinea los elementos al principio del contenedor. Es la propriedad tomada por defecto.</p>          
+          <p><strong>justify-content: flex-end</strong>; Alinea los elementos al final del contenedor. Es de Default.</p>          
+          <p><strong>justify-content: space-around</strong>; muestra los elementos flexibles con espacio antes, entre y después de las líneas</p>          
+          <p><strong>justify-content: space-between</strong>; muestra las posiciones flexibles con espacio entre las líneas.</p>
+          <br>
+          <p><strong>ALINEACION VERTICAL</strong></p>
+          <p>La alineación vertical se realiza a través del llamado <strong>“eje transversal” (cross axis)</strong>, y para ello contamos con tres propiedades diferentes, “<strong>align-items</strong>”, “<strong>align-self”</strong> y “<strong>align-content</strong>”. veamos los que no dice el W3C sobre estas propiedades:</p>
+
+          <p><strong>align-items:</strong> establece la alineación predeterminada para todos los elementos del contenedor, incluidos los elementos independientes.</p>
+	        <p><strong>align-self:</strong> permite alinear elementos independientes del contenedor.</p>
+	        <p><strong>align-content:</strong> alinea las líneas/filas de elementos de un contenedor.</p>
+          <br>
+          <h3>LA PROPRIEDAD ALIGN-ITEMS</h3>
+          <br>
+          <p>Esta propiedad es similar a justify-content, pero la diferencia es el eje a lo largo del cual funciona. Para entender mejor esto, tenéis que intentar quitar la propiedad que define la altura de los elementos hijos, y aumentar la del elemento padre:</p>
+          <p><strong>align-items: center; </strong>centra los elementos a lo largo del eje.</p>
+          <p><strong>align-items: flex-start</strong> alinea en vertical los elementos flexibles en la parte superior del contenedor, osea posiciona los elementos desde el inicio del contenedor, es decir, a lo largo del eje transversal. También afecta el valor de <strong>“flex-direction”</strong> al sentido de la alineación vertical.</p>
+          <p><strong>align-items: flex-end</strong> alinea los divs flexibles en la parte inferior del contenedor a lo largo del eje transversal</p>
+          <p><strong>align-items: stretch</strong>: estira los elementos flexibles para llenar el contenedor (esto es valor predeterminado)</p>
+          <br>
+          <img src="img/flexbox04.png" alt="flexbox">        					
+		</article>
+        <h1>Referencias Bibliograficas:</h1>
+        <article>
+          <ul>
+            <li type= disc>walter nicolas Contributors by commit history Recuperado de https://developer.mozilla.org/es/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox</li>
+            <li type= disc>W3Schools is Powered by W3.CSS. (2022) Recuperado de https://www.w3schools.com/css/css3_flexbox.asp</li>
+            <li type= disc>Silvia Mazzetta (2020-05-03) Recuperado de https://www.ma-no.org/es/diseno-web/css/guia-de-flexbox-las-bases</li>
+          </ul> 
+        </article>
+			</section>		
+			<aside>
+				<h2>R e l a c i o n a d o </h2>  
+				<br>
+				<div class="item1">
+					<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Ffacebook.com%2FUniversidadUNAD%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+				</div>
+				<br>
+				<div class="item1">
+					<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fhtmlcssprogramming%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+				</div>
+        <div class="item1">
+					<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Ffacebook.com%2FUniversidadUNAD%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+				</div>
+				<br>
+				<div class="item1">
+					<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fhtmlcssprogramming%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+				</div>
+        <div class="item1">
+					<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Ffacebook.com%2FUniversidadUNAD%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+				</div>
+				<br>
+				<div class="item1">
+					<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fhtmlcssprogramming%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+				</div>
+        <div class="item1">
+					<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Ffacebook.com%2FUniversidadUNAD%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+				</div>
+				<br>
+				<div class="item1">
+					<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fhtmlcssprogramming%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+				</div>
+			</aside>      
+		</main>
+      	<footer>      		
+			<p>Sitio web Diseñado por: Alexander Monroy</p>
+        	<p>Fecha de publicacion: 2022</p>
+        	<p>E-mail: amonroy1@unadvirtual.edu.co</p>
+        	<p>Skype: krauser271189</p>
+      	</footer>
+	</div>
+</body>
+</html>
