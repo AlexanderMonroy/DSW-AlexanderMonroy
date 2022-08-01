@@ -1,0 +1,153 @@
+body{
+	background-color: #D8E4D2	
+}
+div.foto{
+	text-align: left;
+	float: left;
+	text-align: center;	
+}
+div.contenedor{
+	margin-left: auto;
+	margin-right: auto;
+	width: 94%;
+}
+header, .section, article,.aside,#footer {
+	border-radius: 10px;
+	
+	/*agregado para estandarizar las referencias de las cajas */
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;	
+}
+#footer, article, header{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+header{	
+	height: auto;
+	width: 100%;
+	float: center;
+	text-align: center;
+	background-color: #6dfa68;
+	overflow: hidden;
+ }
+div.titulo{
+ 	font-size:250%;	
+	padding-top: 2.5%;
+	}
+
+nav.navbar{
+	background-color: #00aeff;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+.navbar-nav li ul{
+	background-color: #00aeff;
+	border: solid 1px;
+}
+
+.navbar-nav li a{
+	background-color: #00aeff;	
+	text-decoration: none;
+	color: black;
+}
+.navbar-nav li a:hover{
+	background-color: #6fc5ff;	
+}
+
+.section{	
+	background-color: #FFF0AA;	
+	margin-bottom: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 24px;
+	font-size: 17px;
+	overflow: hidden;	
+}
+.section h1{
+	text-align: center;
+	font-size: 20px;
+	padding: 10px;
+}
+article{
+	height: auto;	
+	background-color: #AAF0FF;	
+	margin: 10px 10px 0 10px;
+	overflow: hidden;
+}
+strong{
+	font-weight: bold;
+}
+
+.aside{	
+	box-sizing: border-box;	
+	background-color: #EACEAC;	
+}
+.aside h2{
+	text-align: center;
+	font-size: 30px;
+}
+div.item1{
+	border: solid 1px;
+	padding: 5px;
+}
+
+#footer{
+	height: auto;
+	width: 100%;		
+	overflow: hidden;
+}
+#footer p { 	
+	font-weight: bold;
+}
+
+.social{
+	position: fixed;
+	left: -10px;
+	top: 60%;
+	z-index: 2000px;
+}
+.social ul{
+	list-style-type: none;
+}
+.social ul li a{
+	display:inline-block;
+	color: white;
+	background: black;
+	padding: 10px 15px;
+	text-decoration: none;	
+	transition: all 400ms ease;
+}
+
+.social ul li .icon-facebook{background: #3b5998;}
+.social ul li .icon-instagram{background: #517fa4;}
+.social ul li .icon-twitter{background: #55acee;}
+.social ul li .icon-youtube{background: #bb0000;}
+
+.social ul li a:hover {
+	padding: 10px 20px;
+	background: #362F30;
+}
+/* Media queries */
+@media (max-width: 575.98px) { 
+    h1 { font-size: 40px; line-height: normal; }
+    .portfolio-details h2 { font-size: 32px; }
+    .plans { min-width: unset; padding: 40px; }
+    .carousel-item p { font-size: 20px; }
+
+    .footer-menu { 
+        display: block !important;
+        padding: 20px 0 !important;
+        font-size: 20px;    
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) { }
+
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .portfolio-details h2 { font-size: 30px; }
+    .plans { min-width: unset; padding: 40px 20px;}
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) { }
+
+@media (min-width: 1200px) { }
