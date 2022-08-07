@@ -26,7 +26,7 @@ footer, article, header{
 header{	
 	height: auto;
 	width: 100%;
-	float: center;
+	
 	text-align: center;
 	background-color: #6dfa68;
 	overflow: hidden;
@@ -107,8 +107,7 @@ section img{
 }
 article{
 	height: auto;
-	width: 95%;
-	float: center;
+	width: 95%;	
 	background-color: #AAF0FF;
 	overflow: hidden;
 	margin-left: auto;
@@ -154,8 +153,7 @@ footer p {
 .social{
 	position: fixed;
 	left: -10px;
-	top: 60%;
-	z-index: 2000px;
+	top: 60%;	
 }
 .social ul{
 	list-style-type: none;

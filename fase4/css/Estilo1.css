@@ -25,8 +25,7 @@ header, .section, article,.aside,#footer {
 }
 header{	
 	height: auto;
-	width: 100%;
-	float: center;
+	width: 100%;	
 	text-align: center;
 	background-color: #6dfa68;
 	overflow: hidden;
@@ -104,7 +103,6 @@ div.item1{
 	position: fixed;
 	left: -10px;
 	top: 60%;
-	z-index: 2000px;
 }
 .social ul{
 	list-style-type: none;
